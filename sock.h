@@ -7,7 +7,7 @@ extern "C" {
 
 typedef struct sock_t sock_t;
 
-sock_t* sock_open(const char* ip, int port);
+sock_t* sock_open(const char* ip, int port, int backlog);
 void    sock_close(sock_t* sock);
 sock_t* sock_assert(sock_t* sock);
 
